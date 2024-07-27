@@ -18,6 +18,8 @@ input::placeholder{
     /* background: #e5e5e5; */
     width: 100%;
     display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
     justify-content: space-evenly;
     height: 60px;
     align-items: center;
@@ -40,27 +42,39 @@ input::placeholder{
    
     
 }
+
 .home-content{
     /* background: #acc9e9; */
     width: 100%;
     height: 400px;
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
     flex-wrap: wrap;
 }
+.search-area{
+    /* background: #c2bebe; */
+    width: 30%;
+    /* height: 300px; */
+}
 .search-area p{
-    width: 50%;
+    width: 100%;
     font-weight: 700;
     font-family: Arial, Helvetica, sans-serif;
     /* background: #6a6868; */
-    font-size: 50px;
+    font-size: 40px;
+    line-height: 65px;
 }
+
 .search-area input{
     width: 40%;
     height: 40px;
     border: 3px solid black;
     border-radius: 10px;
+}
+.home-pic{
+    /* background: #000; */
+    /* display: inline-block; */
 }
 .home-text{
     /* height: 400px; */
@@ -192,3 +206,38 @@ input::placeholder{
     display: flex;
     flex-direction: column;
 }
+
+@media  (max-width: 600px) {
+
+.nav-links{
+    display: flex;
+    flex-direction: column;
+}
+.search-area p{
+    font-size: 30px;
+    width: 200%;
+}
+.search-area input{
+    width: 100%;
+}
+.home-pic{
+    /* background: #000; */
+    display: inline;
+}
+}
+
+/* 
+Extra small devices (phones, 600px and down)
+@media only screen and (max-width: 600px) {...} */
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+/* @media only screen and (min-width: 600px) {...} */
+
+/* Medium devices (landscape tablets, 768px and up) */
+/* @media only screen and (min-width: 768px) {...} */
+
+/* Large devices (laptops/desktops, 992px and up) */
+/* @media only screen and (min-width: 992px) {...} */
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+/* @media only screen and (min-width: 1200px) {...} */
